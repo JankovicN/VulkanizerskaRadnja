@@ -3,7 +3,7 @@ package auto_radnja.gume;
 /**
  * Klasa predstavlja automobilsku gumu.
  * Automobilska guma ima atribute markaModel, precnik, sirina i visina.
- * @author nikola
+ * @author janko
  * @version 1.0
  * 
  */

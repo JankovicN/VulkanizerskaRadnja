@@ -6,8 +6,16 @@ import auto_radnja.gume.AutoGuma;
 
 import auto_radnja.gume.AutoGuma;
 
+/**
+ * Predstavlja implementaciju radnje koja posluje sa gumama.
+ * @author janko
+ * @version 1.0
+ */
 public class VuklanizerskaRadnja implements Radnja {
 
+	/**
+	 * Lista svih guma u vulkanizerskoj radnji
+	 */
 	private List<AutoGuma> gume = new LinkedList<AutoGuma>();
 	
 	@Override
