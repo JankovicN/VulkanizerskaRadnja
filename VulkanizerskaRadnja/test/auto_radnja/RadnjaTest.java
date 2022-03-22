@@ -92,6 +92,7 @@ public abstract class RadnjaTest {
 		List<AutoGuma> listaGuma = radnja.pronadjiGumu("Tigar");
 		
 		assertEquals(1, listaGuma.size());
+		assertTrue(!listaGuma.contains(testGuma));
 		assertTrue(listaGuma.contains(testGuma2));
 	}
 	
@@ -116,15 +117,6 @@ public abstract class RadnjaTest {
 	
 	@Test
 	void testPronadjiGumuNull() {
-		
-		AutoGuma testGuma2 = new AutoGuma();
-		testGuma2.setMarkaModel("Tigar");
-		testGuma2.setSirina(214);
-		testGuma2.setPrecnik(18);
-		testGuma2.setVisina(44);
-		
-		radnja.dodajGumu(testGuma);
-		radnja.dodajGumu(testGuma2);
 		
 		List<AutoGuma> listaGuma = radnja.pronadjiGumu(null);
 		
