@@ -31,13 +31,14 @@ class AutoGumaTest {
 
 	@Test
 	void testAutoGumaStringIntIntInt() {
+		
 		testGuma=new AutoGuma("Good Year", 19, 215, 45);
 		
+		assertNotNull(testGuma);
 		assertEquals("Good Year", testGuma.getMarkaModel());
 		assertEquals(19, testGuma.getPrecnik());
 		assertEquals(215, testGuma.getSirina());
 		assertEquals(45, testGuma.getVisina());
-		assertNotNull(testGuma);
 	}
 
 	@Test
